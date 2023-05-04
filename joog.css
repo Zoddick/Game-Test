@@ -1,0 +1,78 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+.borda {
+background-image: url(imagens/pixil-frame-0\ \(1\).png);
+width: 80%;
+height: 900px;
+border: 1px solid #333;
+margin: 0 auto;
+position:relative;
+overflow: hidden;
+}
+.manke{
+    position:absolute;
+    bottom: 15%;
+    width: 140px;
+    height: 150px;
+   animation: manke-anda 2s infinite linear;
+}
+.hank{
+position:absolute;
+bottom:15%;
+width: 100px;
+height: 150px;
+left: 150px;
+}
+.faca{
+    position:absolute;
+    bottom: 10%;
+    height: 80px;
+    width: 80px;
+    left: 150px;
+    animation: facada 1s infinite;
+
+}
+.jesse{
+    position: absolute;
+    bottom: 15%;
+    width: 100px;
+    height: 150px;
+    right: 150px;
+
+}
+.pula{
+    animation: pula 500ms ease-in-out;
+}
+@keyframes manke-anda{
+ from{
+    right: -80px;
+ }
+ to{
+    right: 100%;
+ }
+    
+}
+@keyframes pula{
+0% {
+    bottom: 15%;
+}
+
+50%{
+    top: 450px;
+}
+100%{
+    bottom: 15%;
+}
+}
+@keyframes facada {
+from{
+    left: 150px;
+}
+to {
+    left: 500px;
+}
+}
